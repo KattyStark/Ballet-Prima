@@ -1,0 +1,11 @@
+<h1>Galerie Ballet Prima Pardubice</h1>
+<div class="gallery">
+    <p>{{ description }}</p>
+    {% for image in images %}
+        <div class="gallery-item">
+            <img src="{{ image.src }}" alt="{{ image.alt }}"></div>
+        {% endfor %}
+        <p>
+            <a class="back-button" href="/galerie/">Zpět do galerie</a>
+        </p>
+    </div>

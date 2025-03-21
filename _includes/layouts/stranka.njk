@@ -1,0 +1,9 @@
+---
+layout: layouts/hlavni-sablona.njk
+---
+
+{% include 'partials/header.njk' %}
+<main {% if mainClass %} class="{{ mainClass }}" {% endif %}>
+    {{ content | safe }}
+</main>
+{% include 'partials/footer.njk' %}

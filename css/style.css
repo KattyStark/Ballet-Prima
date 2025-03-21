@@ -33,14 +33,14 @@ header {
 }
 
 .panorama-container {
-    position: relative;
-    width: 100%;
+    /* position: relative;
+    width: 100%; */
     text-align: center;
 }
 
 .panorama {
     width: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
     display: block;
 }
 
@@ -50,43 +50,58 @@ header {
     font-weight: bold;
     color: rgb(195, 203, 218);
     position: absolute;
-    bottom: 10px;
-    right: 540px;
+    width: 100%;
+    bottom: 20px;
+    /* right: 540px; */
     background: rgba(0, 0, 0, 0.3);
     padding: 10px 20px;
     border-radius: 10px;
 }
 
 .panorama-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex;
+    align-items: end;
+    justify-content: space-between;
     width: 100%;
+    height: 500px;
+    background: url("/images/perfectpanorama.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; */
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
 }
 
 .logo {
     position: absolute;
-    top: 282px;
-    left: 95.5%;
-    transform: translateX(-50%);
+    bottom: -10%;
+    right: 0.5%;
+    /* transform: translateY(-50%); */
     width: 130px;
-    z-index: 3;
-    border-radius: 5%;
+    /* z-index: 3; */
+    border-radius: 10px;
 }
 
 .logolittle {
     position: absolute;
-    top: 318px;
-    right: 80.3%;
-    transform: translateX(-50%);
+    bottom: -5%;
+    left: 0.5%;
+    /* transform: translateY(-50%); */
     width: 190px;
-    z-index: 3;
-    border-radius: 5%;
+    /* z-index: 3; */
+    border-radius: 10px;
 }
 
 .menu_top {
-    position: relative;
-    z-index: 4;
+    /* position: relative;
+    z-index: 4; */
     margin-top: 10px;
 }
 
@@ -207,7 +222,7 @@ header h1 {
     max-width: 800px;
     border-radius: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    margin: 20px 100px;
+    /* margin: 20px 100px; */
 }
 
 .important h1,
