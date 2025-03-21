@@ -1,8 +1,10 @@
 ---
 layout: layouts/balet.njk
-title: Rok 2015
-description: Večer klasického baletu 2015 Večer klasického baletu se sólisty Baletu Národního divadla Praha Ivanna Illyenko, Michal Štípa, Irina Burduja.
+title: Večer klasického baletu 2015
+pagetitle: Večer klasického baletu 2015
+description: Večer klasického baletu se sólisty Baletu Národního divadla Praha Ivanna Illyenko, Michal Štípa, Irina Burduja.
 images:
+    - { src: '/images/foto_2015/IMG_0060.jpg', alt: 'balet_2015' }
     - { src: '/images/foto_2015/IMG_0013.jpg', alt: '2015-1' }
     - { src: '/images/foto_2015/IMG_0026.jpg', alt: '2015-2' }
     - { src: '/images/foto_2015/IMG_0095.jpg', alt: '2015-3' }

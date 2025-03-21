@@ -1,8 +1,10 @@
 ---
 layout: layouts/balet.njk
-title: Rok 2016
-description: Večer klasického baletu 15. března 2016 Večer klasického baletu se sólisty Baletu Národního divadla Praha a Národního divadla Brno Ivanna Illyenko, Michal Štípa, Ivan Popov.
+title: Večer klasického baletu 2016
+pagetitle: Večer klasického baletu 15. března 2016
+description: Večer klasického baletu se sólisty Baletu Národního divadla Praha a Národního divadla Brno Ivanna Illyenko, Michal Štípa, Ivan Popov.
 images:
+    - { src: '/images/foto_2016/IMG6058.jpeg', alt: 'balet_2016' }
     - { src: '/images/foto_2016/IMG6152.jpeg', alt: '2016-1' }
     - { src: '/images/foto_2016/IMG4330.jpeg', alt: '2016-2' }
     - { src: '/images/foto_2016/IMG4806.jpeg', alt: '2016-3' }

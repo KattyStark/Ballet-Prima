@@ -5,70 +5,16 @@ title: Galerie
 
 <h1>Galerie Ballet Prima Pardubice</h1>
 <div class="gallery">
+    {% for prispevek in collections.balet_years | reverse %}
     <div class="gallery-item">
-        <img src="/images/foto_2024/_MG_2698.JPG" alt="balet_2024">
+        {% if prispevek.data.images and prispevek.data.images.length > 0 %}
+        <img src="{{ prispevek.data.images[0].src }}" alt="{{ prispevek.data.images[0].alt }}">
+        {% else %}
+        <img src="/images/default-placeholder.jpg" alt="No image available">
+        {% endif %}
         <div class="caption">
-            <a href="/balet_years/balet_2024/">Večer klasického baletu 2024</a>
+            <a href="{{ prispevek.url }}">{{prispevek.data.title}}</a>
         </div>
     </div>
-    <div class="gallery-item">
-        <img src="/images/foto_2023/IMG_9717.JPG" alt="balet_2023">
-        <div class="caption">
-            <a href="/balet_years/balet_2023/">Večer klasického baletu 2023</a>
-        </div>
-    </div>
-    <div class="gallery-item">
-        <img src="/images/foto_2022/DSC_5239.jpg" alt="balet_2022">
-        <div class="caption">
-            <a href="/balet_years/balet_2022/">Večer klasického baletu 2022</a>
-        </div>
-    </div>
-    <div class="gallery-item">
-        <img src="/images/foto_2019/RI2A8922.JPG" alt="balet_2019">
-        <div class="caption">
-            <a href="/balet_years/balet_2019/">Večer klasického baletu 2019</a>
-        </div>
-    </div>
-    <div class="gallery-item">
-        <img src="/images/foto_2018/RI2A9865.JPG" alt="balet_2018">
-        <div class="caption">
-            <a href="/balet_years/balet_2018/">Večer klasického baletu 2018</a>
-        </div>
-    </div>
-    <div class="gallery-item">
-        <img src="/images/foto_2017/RI2A5088.jpeg" alt="balet_2017">
-        <div class="caption">
-            <a href="/balet_years/balet_2017/">Večer klasického baletu 2017</a>
-        </div>
-    </div>
-    <div class="gallery-item">
-        <img src="/images/foto_2016/IMG6058.jpeg" alt="balet_2016">
-        <div class="caption">
-            <a href="/balet_years/balet_2016/">Večer klasického baletu 2016</a>
-        </div>
-    </div>
-    <div class="gallery-item">
-        <img src="/images/foto_2015/IMG_0060.jpg" alt="balet_2015">
-        <div class="caption">
-            <a href="/balet_years/balet_2015/">Večer klasického baletu 2015</a>
-        </div>
-    </div>
-    <div class="gallery-item">
-        <img src="/images/foto_2014/foto379.jpeg" alt="balet_2014">
-        <div class="caption">
-            <a href="/balet_years/balet_2014/">Večer klasického baletu 2014</a>
-        </div>
-    </div>
-    <div class="gallery-item">
-        <img src="/images/foto_2013/img_4954.jpg" alt="balet_2013">
-        <div class="caption">
-            <a href="/balet_years/balet_2013/">Večer klasického baletu 2013</a>
-        </div>
-    </div>
-    <div class="gallery-item">
-        <img src="/images/foto_2012/002.jpg" alt="balet_2012">
-        <div class="caption">
-            <a href="/balet_years/balet_2012/">Večer klasického baletu 2012</a>
-        </div>
-    </div>
+    {% endfor %}
 </div>

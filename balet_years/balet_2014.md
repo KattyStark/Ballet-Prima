@@ -1,8 +1,8 @@
 ---
 layout: layouts/balet.njk
-title: Rok 2014
-description:
-    Večer klasického baletu 27. března 2014. Foto Vlastimil Raška Pásmo ze světových baletů zatančili Tatiana
+title: Večer klasického baletu 2014
+pagetitle: Večer klasického baletu 27. března 2014
+description: Foto Vlastimil Raška Pásmo ze světových baletů zatančili Tatiana
     Kuranosova
     a děti ze studia Ballet Prima Pardubice a jejich hosté, sólisté Baletu ND Praha Ivanna Illyenko a Michal Štípa,
     děti ze
@@ -14,6 +14,7 @@ description:
     Nahrávací
     studio Chrudim.
 images:
+    - { src: '/images/foto_2014/foto379.jpeg', alt: 'balet_2014' }
     - { src: '/images/foto_2014/foto434.jpeg', alt: '2014-1' }
     - { src: '/images/foto_2014/foto531.jpeg', alt: '2014-2' }
     - { src: '/images/foto_2014/foto581.jpeg', alt: '2014-3' }

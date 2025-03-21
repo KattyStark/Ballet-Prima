@@ -1,8 +1,10 @@
 ---
 layout: layouts/balet.njk
-title: Rok 2023
-description: Večer klasického baletu 2023 Večer klasického baletu se sólisty Baletu Národního divadla Praha Irina Burduja, Dmytro Tenytskyy, Patrik Holeček.
+title: Večer klasického baletu 2023
+pagetitle: Večer klasického baletu 2023
+description: Večer klasického baletu se sólisty Baletu Národního divadla Praha Irina Burduja, Dmytro Tenytskyy, Patrik Holeček.
 images:
+    - { src: '/images/foto_2023/IMG_9717.JPG', alt: 'balet_2023' }
     - { src: '/images/foto_2023/IMG_0002.JPG', alt: '2023-1' }
     - { src: '/images/foto_2023/IMG_0014.JPG', alt: '2023-2' }
     - { src: '/images/foto_2023/IMG_9448.JPG', alt: '2023-3' }

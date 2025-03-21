@@ -1,8 +1,10 @@
 ---
 layout: layouts/balet.njk
-title: Rok 2022
-description: Večer klasického baletu 2022 Večer klasického baletu se sólisty Baletu Národního divadla Praha Alina Nanu, Federico Ievoli, Danilo Lo Monaco.
+title: Večer klasického baletu 2022
+pagetitle: Večer klasického baletu 2022
+description: Večer klasického baletu se sólisty Baletu Národního divadla Praha Alina Nanu, Federico Ievoli, Danilo Lo Monaco.
 images:
+    - { src: '/images/foto_2022/DSC_5239.jpg', alt: 'balet_2022' }
     - { src: '/images/foto_2022/DSC_5239.jpg', alt: '2022-1' }
     - { src: '/images/foto_2022/DSC_5254.jpg', alt: '2022-2' }
     - { src: '/images/foto_2022/DSC_5257.jpg', alt: '2022-3' }

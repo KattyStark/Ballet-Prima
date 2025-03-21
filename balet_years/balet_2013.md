@@ -1,9 +1,10 @@
 ---
 layout: layouts/balet.njk
-title: Rok 2013
+title: Večer klasického baletu 2013
+pagetitle: Večer klasického baletu 15. února 2013
 # date: 2024-10-28T16:15
 description:
-    Večer klasického baletu 15. února 2013 Pásmo ze světových baletů zatančili Tatiana Kuranosova a děti ze studia
+    Pásmo ze světových baletů zatančili Tatiana Kuranosova a děti ze studia
     Ballet
     Prima Pardubice a jejich hosté, sólisté Baletu ND Praha Ivanna Illyenko a Michal Štípa, děti ze souboru
     Konsonance ZUŠ
@@ -14,6 +15,7 @@ description:
     integrace
     cizinců v Pardubickém kraji
 images:
+    - { src: '/images/foto_2013/img_4954.jpg', alt: 'balet_2013' }
     - { src: '/images/foto_2013/img_4937.jpg', alt: '2013-1' }
     - { src: '/images/foto_2013/img_4890.jpg', alt: '2013-2' }
     - { src: '/images/foto_2013/img_5437.jpg', alt: '2013-3' }
