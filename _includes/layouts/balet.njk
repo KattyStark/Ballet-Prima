@@ -6,6 +6,7 @@ title: Galerie
 {% include 'partials/header.njk' %}
 <main {% if mainClass %} class="{{ mainClass }}" {% endif %}>
     {% include 'partials/fotogalerie.njk' %}
+    <p class="article__meta">Publikováno {{ page.date.toLocaleString('cs-CZ') }}</p>
 </main>
 {# date: 2021-04-13T16:30#}
 {% include 'partials/footer.njk' %}

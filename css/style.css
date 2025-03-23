@@ -25,84 +25,55 @@ header {
 
 .banner {
     font-family: "Dancing Script", cursive;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-weight: bold;
     text-align: center;
     color: rgb(195, 203, 218);
-    padding: 0px;
+    padding: 20px 0;
 }
 
-.panorama-container {
-    /* position: relative;
-    width: 100%; */
-    text-align: center;
-}
-
-.panorama {
+.panorama__image {
     width: 100%;
-    /* max-width: 100%; */
     display: block;
 }
 
-.bannertext {
-    font-family: "Dancing Script", cursive;
-    font-size: 40px;
+.panorama__heading {
+    font-size: 2.5rem;
     font-weight: bold;
     color: rgb(195, 203, 218);
     position: absolute;
     width: 100%;
-    bottom: 20px;
-    /* right: 540px; */
+    bottom: 0;
     background: rgba(0, 0, 0, 0.3);
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
+    margin: 0
 }
 
-.panorama-wrapper {
-    /* display: flex;
-    align-items: end;
-    justify-content: space-between;
-    width: 100%;
-    height: 500px;
-    background: url("/images/perfectpanorama.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain; */
+.panorama {
     position: relative;
-    padding-bottom: 30px;
+    text-align: center;
 }
 
-.logo-wrapper {
+.panorama__logo {
+    position: absolute;
+    width: 100%;
+    top: -60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
+    padding-inline: 5px;
 }
 
-.logo {
-    position: absolute;
-    bottom: -10%;
-    right: 0.5%;
-    /* transform: translateY(-50%); */
-    width: 130px;
-    /* z-index: 3; */
-    border-radius: 10px;
+.logo-pardubice {
+    width: 120px;
+    border-radius: 5px;
 }
 
-.logolittle {
-    position: absolute;
-    bottom: -5%;
-    left: 0.5%;
-    /* transform: translateY(-50%); */
-    width: 190px;
-    /* z-index: 3; */
-    border-radius: 10px;
-}
-
-.menu_top {
-    /* position: relative;
-    z-index: 4; */
-    margin-top: 10px;
+.logo-prima {
+    width: 170px;
+    border-radius: 5px;
 }
 
 header h1 {
@@ -110,50 +81,58 @@ header h1 {
     color: white;
     font-weight: 700;
     letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: 2rem;
 }
 
-.menu__top {
+.menu {
     list-style: none;
-    padding: 0;
+    padding-block: 20px;
+    margin: 0;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-.menu__top li {
-    display: inline;
+.menu li {
+    display: inline-block;
+    line-height: 1.6;
+    line-break: strict;
 }
 
-.menu__link {
+.menu-link {
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 400;
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background 0.3s ease-in-out;
 }
 
-.menu__link:hover {
+.menu-link:hover {
     background: rgba(255, 255, 255, 0.3);
     color: #1c3d5a;
 }
 
-.about,
-.events,
-.obleceni {
+.about {
     display: flex;
-    text-align: center;
     align-items: center;
+    text-align: left;
     justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.home,
+.obleceni {
+    text-align: center;
+    border-radius: 5px;
     background: linear-gradient(to right, #a0c4ff, #eef5ff);
-    border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     margin: 10px auto;
-    gap: 40px;
     padding: 60px;
-    flex-wrap: wrap;
     max-width: 1200px;
 }
 
@@ -164,11 +143,11 @@ header h1 {
     margin: 40px auto;
     padding: 20px;
     background: linear-gradient(to right, #a0c4ff, #eef5ff);
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.contacts h1 {
+.contacts h2 {
     color: #302e2f;
     font-size: 24px;
     margin-bottom: 15px;
@@ -177,7 +156,6 @@ header h1 {
 .contacts p {
     font-weight: bold;
     color: #302e2f;
-    font-size: 18px;
     margin-bottom: 15px;
 }
 
@@ -214,7 +192,7 @@ header h1 {
 
 .sal img {
     max-width: 500px;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -222,11 +200,12 @@ header h1 {
     max-width: 800px;
     border-radius: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    /* margin: 20px 100px; */
+    margin: 20px auto;
+    display: block;
 }
 
-.important h1,
-.sal h1 {
+.important h2,
+.sal h2 {
     text-align: left;
     font-size: 28px;
     margin-bottom: 20px;
@@ -258,27 +237,26 @@ header h1 {
     justify-content: space-around;
     gap: 30px;
     flex-wrap: wrap;
-    border-radius: 10px;
+    border-radius: 5px;
     max-width: 300px;
 }
 
-.important h3 {
+.important h4 {
     margin-top: 20px;
     font-size: 18px;
     color: #272829;
 }
 
 .about p {
-    flex: 1;
-    max-width: 600px;
+    flex: 1 1 auto;
     font-size: 18px;
     line-height: 1.8;
 }
 
 .about img {
-    width: 350px;
-    height: auto;
-    border-radius: 10px;
+    max-width: 350px;
+    flex: 1 0 350px;
+    border-radius: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -299,12 +277,11 @@ header h1 {
 .img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     display: block;
     margin: 10px auto;
-
 }
 
 .obleceni {
@@ -318,22 +295,21 @@ header h1 {
 
 .katalog {
     width: 40%;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
-h2 {
+h2,
+h3 {
     margin-top: 10px;
     font-size: 18px;
     color: #333;
     text-align: center;
 }
 
-.sal h2 {
+.end {
     text-align: center;
-}
-
-.end h2 {
-    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .event-images img:hover {
@@ -346,7 +322,7 @@ h2 {
     margin: 40px auto;
     padding: 20px;
     background: linear-gradient(to right, #a0c4ff, #eef5ff);
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -366,7 +342,7 @@ h2 {
     flex: 1;
 }
 
-.onas h1 {
+.onas h2 {
     color: #302e2f;
     ;
     font-size: 28px;
@@ -390,7 +366,7 @@ h2 {
     width: 100%;
     max-width: 400px;
     margin: 30px auto;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -466,8 +442,8 @@ footer {
 }
 
 .gallery-item {
-    /* background: #3a3b3b; */
-    border-radius: 10px;
+    background: #fff;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
@@ -522,7 +498,6 @@ footer {
     transform: scale(1.05);
 }
 
-/* Gallery Grid */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -542,20 +517,6 @@ footer {
 
 .gallery-item img:hover {
     transform: scale(1.05);
-}
-
-/* Lightbox Overlay */
-.lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
 }
 
 @media (max-width: 768px) {
@@ -579,7 +540,7 @@ footer {
         width: 90%;
     }
 
-    .important h1 {
+    .important h2 {
         font-size: 24px;
     }
 

@@ -1,25 +1,18 @@
-<nav class="menu_top">
-    <ul class="menu__top">
-        <li class="top">
-            <a href="/" class="menu__link">Hlavní stránka</a>
-        </li>
-        <li class="top">
-            <a href="/baletni_studio/" class="menu__link">Baletní studio</a>
-        </li>
-        <li class="top">
-            <a href="/onas/" class="menu__link">O nás</a>
-        </li>
-        <li class="top">
-            <a href="/galerie/" class="menu__link">Galerie</a>
-        </li>
-        <li class="top">
-            <a href="/duleziteinfo/" class="menu__link">Důležité informace a ceník</a>
-        </li>
-        <li class="top">
-            <a href="/baletni_obleceni/" class="menu__link">Baletní oblečení</a>
-        </li>
-        <li class="top">
-            <a href="/kontakty/" class="menu__link">Kontakty</a>
-        </li>
+<nav class="navigation">
+    <ul class="menu">
+        {% set menuItems = [
+            { url: "/", label: "Hlavní stránka" }, 
+            { url: "/baletni_studio/", label: "Baletní studio" }, 
+            { url: "/onas/", label: "O nás" },
+            { url: "/galerie/", label: "Galerie" },
+            { url: "/duleziteinfo/", label: "Důležité informace a ceník" },
+            { url: "/baletni_obleceni/", label: "Baletní oblečení" },
+            { url: "/kontakty/", label: "Kontakty" }
+        ] %}
+        {% for item in menuItems %}
+            <li class="menu__item">
+                <a href="{{ item.url }}" class="menu-link">{{ item.label }}</a>
+            </li>
+        {% endfor %}
     </ul>
 </nav>
