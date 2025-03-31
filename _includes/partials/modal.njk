@@ -1,0 +1,12 @@
+{% block head %}
+   <link rel="stylesheet" href="/css/modal.css">
+{% endblock %}
+<div class="{{ modal_class }}">
+    <a href="#pdf-modal" class="open-modal">{{ open_link_content }}</a>
+    <div id="pdf-modal" class="modal">
+        <div class="modal__content">
+            <a href="#close" class="modal__close-btn" role="button">✖️</a>
+            <iframe src="{{ src }}"></iframe>
+        </div>
+    </div>
+</div>

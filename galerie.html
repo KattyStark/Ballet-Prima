@@ -4,7 +4,7 @@ title: Galerie
 ---
 
 <h2>Galerie Ballet Prima Pardubice</h2>
-<div class="gallery">
+<div class="gallery gallery--grid">
     {% for prispevek in collections.balet_years | reverse %}
     <div class="gallery-item">
         {% if prispevek.data.images and prispevek.data.images.length > 0 %}

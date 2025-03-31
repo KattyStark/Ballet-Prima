@@ -18,7 +18,6 @@ images:
     - { src: '/images/foto_2014/foto434.jpeg', alt: '2014-1' }
     - { src: '/images/foto_2014/foto531.jpeg', alt: '2014-2' }
     - { src: '/images/foto_2014/foto581.jpeg', alt: '2014-3' }
-    - { src: '/images/foto_2014/foto596.jpeg', alt: '2014-4' }
     - { src: '/images/foto_2014/foto624.jpeg', alt: '2014-5' }
     - { src: '/images/foto_2014/foto880.jpeg', alt: '2014-6' }
     - { src: '/images/foto_2014/foto950.jpeg', alt: '2014-7' }

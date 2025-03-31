@@ -3,7 +3,11 @@ layout: layouts/hlavni-sablona.njk
 ---
 
 {% include 'partials/header.njk' %}
-<main {% if mainClass %} class="{{ mainClass }}" {% endif %}>
+<main
+    {% if mainClass %} class="{{ mainClass }}" {% endif %}>
+    {# {% if title == "Důležité informace a ceník" %}
+                {% include "partials/tabs.njk" %}
+            {% endif %} #}
     {{ content | safe }}
 </main>
 {% include 'partials/footer.njk' %}

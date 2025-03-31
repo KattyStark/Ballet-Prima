@@ -1,0 +1,57 @@
+{% block head %}
+    <link rel="stylesheet" href="/css/carousel.css">
+{% endblock %}
+<div class="carousel">
+    {% for image in images %}
+        <input type="radio" name="carousel" id="slide{{ loop.index }}" {% if loop.first %} checked {% endif %}>
+    {% endfor %}
+    <div class="slides">
+        {% for image in images %}
+            <div class="slide">
+                <img src="{{ image.src }}" alt="{{ image.alt }}">
+            </div>
+        {% endfor %}
+    </div>
+    <div class="pagination">
+        {% for i in range(1, images | length + 1) %}
+            <label class="dot" for="slide{{ i }}"></label>
+        {% endfor %}
+    </div>
+    <div class="arrows">
+        {% for i in range(1, images | length + 1) %}
+            <div class="arrow-set arrow-set-{{ i }}">
+                {% if i == 1 %}
+                    <label class="prev" for="slide{{ images | length }}">←</label>
+                {% else %}
+                    <label class="prev" for="slide{{ i - 1 }}">←</label>
+                {% endif %}
+                {% if i == images | length %}
+                    <label class="next" for="slide1">→</label>
+                {% else %}
+                    <label class="next" for="slide{{ i + 1 }}">→</label>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+    {% for i in range(1, images | length + 1) %}
+        #slide{{ i }}:checked ~ .arrows .arrow-set-{{ i }}{
+            display: flex; 
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        #slide{{ i }}:checked ~ .slides {
+            transform: translateX(-{{ (i - 1) * 100 }}%);
+        }
+        #slide{{ i }}:checked ~ .pagination .dot:nth-child({{ i }}) {
+            background-color: #4f5bd5; 
+        }
+    {% endfor %}
+</style>

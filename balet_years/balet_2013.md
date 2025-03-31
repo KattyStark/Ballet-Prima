@@ -16,13 +16,12 @@ description:
     cizinců v Pardubickém kraji
 images:
     - { src: '/images/foto_2013/img_4954.jpg', alt: 'balet_2013' }
+    - { src: '/images/foto_2013/img_5408.jpg', alt: '2013-7' }
+    - { src: '/images/foto_2013/img_5010.jpg', alt: '2013-5' }
     - { src: '/images/foto_2013/img_4937.jpg', alt: '2013-1' }
     - { src: '/images/foto_2013/img_4890.jpg', alt: '2013-2' }
     - { src: '/images/foto_2013/img_5437.jpg', alt: '2013-3' }
-    - { src: '/images/foto_2013/img_4954.jpg', alt: '2013-4' }
-    - { src: '/images/foto_2013/img_5010.jpg', alt: '2013-5' }
     - { src: '/images/foto_2013/img_5231.jpg', alt: '2013-6' }
-    - { src: '/images/foto_2013/img_5408.jpg', alt: '2013-7' }
 
 tags: balet_years
 ---

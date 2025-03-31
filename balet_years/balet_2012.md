@@ -19,10 +19,10 @@ description:
     Xanada Pardubice. Zde Vám přinášíme alespoň malý střípek či milou vzpomínku na tuto okouzlující událost.
 images:
     - { src: '/images/foto_2012/002.jpg', alt: 'balet_2012' }
+    - { src: '/images/foto_2012/014.jpg', alt: '2012-4' }
     - { src: '/images/foto_2012/004.jpg', alt: '2012-1' }
     - { src: '/images/foto_2012/19.jpg', alt: '2012-2' }
     - { src: '/images/foto_2012/009.jpg', alt: '2012-3' }
-    - { src: '/images/foto_2012/014.jpg', alt: '2012-4' }
     - { src: '/images/foto_2012/25.jpg', alt: '2012-5' }
 
 tags: balet_years
