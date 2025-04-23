@@ -1,0 +1,35 @@
+
+.contacts p {
+    font-weight: bold;
+    color: var(--text-heading);
+    font-size: 18px;
+    margin-bottom: 15px;
+   }
+   
+   .contacts ul {
+    list-style: none;
+    padding: 0;
+   }
+   
+   .contacts li {
+    margin: 15px 0;
+    font-size: 18px;
+   }
+   
+   .contacts a {
+    text-decoration: none;
+    color: var(--text-heading);
+    transition: color 0.3s ease-in-out;
+   }
+   
+   .contacts a:hover {
+    color: #366de4;
+    text-decoration: underline;
+   }
+
+.map-container iframe {
+    width: 100%;
+    min-height: 350px;
+    max-height: 550px;
+    border: 0;
+   }

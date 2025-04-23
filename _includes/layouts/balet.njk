@@ -3,8 +3,11 @@ layout: layouts/hlavni-sablona.njk
 title: Galerie
 ---
 
+{% block head %}
+    <link rel="stylesheet" href="/css/balet.css">
+    {% endblock %}
 {% include 'partials/header.njk' %}
-<main {% if mainClass %} class="{{ mainClass }}" {% endif %}>
+<main {% if mainClass %} class="main {{ mainClass }}" {% endif %}>
     {% include 'partials/fotogalerie.njk' %}
     <p class="article__meta">Publikováno {{ page.date.toLocaleString('cs-CZ') }}</p>
 </main>

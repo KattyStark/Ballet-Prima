@@ -1,0 +1,19 @@
+
+.obleceni {
+    text-align: center;
+   }
+   
+   .obleceni a {
+    display: inline-block;
+    margin: 5px auto;
+   }
+   
+   .katalog {
+    width: 40%;
+   }
+   
+   .end {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+   }

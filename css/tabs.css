@@ -1,0 +1,32 @@
+.tabs__input[type="radio"] {
+    display: none;
+}
+
+.tabs__label {
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    cursor: pointer;
+    text-align: center;
+    border-top: 1px solid #113db787;
+    border-inline: 1px solid #113db787;
+    border-top-right-radius: 20px;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+input[type="radio"]:checked+label {
+    border-bottom: 3px #113db7 solid;
+}
+
+.tab-content {
+    display: none;
+    padding: 0 15px;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3 {
+    display: block;
+}

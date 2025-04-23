@@ -1,0 +1,37 @@
+
+.onas__text {
+    text-align: justify;
+   }
+   
+   .onas__osvedceni,
+   .image--onas {
+    margin: 30px auto;
+    box-shadow: var(--shadow-2);
+   }
+   
+   .onas {
+    padding: 0 20px;
+   }
+   
+   .onas__osvedceni {
+    max-width: 400px;
+   }
+   
+   .image--onas {
+    width: 80%;
+    max-width: 300px;
+   }
+
+   @media (min-width: 680px) {
+    .onas {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+       }
+      
+       .image--onas {
+        width: 280px;
+        flex-basis: 25%;
+       }
+   }

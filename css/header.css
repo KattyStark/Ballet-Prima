@@ -1,4 +1,4 @@
-header {
+/* header {
     background: linear-gradient(to right, #4a90e2, #113db7);
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -17,6 +17,7 @@ header {
 .logo-pardubice,
 .logo-prima,
 .logo-ballero {
+    width: auto;
     border-radius: var(--border-shape);
 }
 
@@ -202,7 +203,6 @@ header {
 
     .burger-button {
         display: none;
-        /* Hide burger button for larger screens */
     }
 
     .menu__item {
@@ -212,5 +212,225 @@ header {
     .menu-link {
         color: white;
         padding: 20px 15px;
+    }
+} */
+
+header {
+    background: linear-gradient(to right, #4a90e2, #113db7);
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: var(--text-color-light);
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.logo {
+    width: auto;
+    border-radius: var(--border-shape);
+}
+
+.logo--ballero {
+    flex: 0 1 auto;
+    max-height: 28px;
+    background-color: rgba(255, 255, 255, 0.141);
+}
+
+.logo--prima {
+    flex: 1 1 auto;
+    max-height: 80px;
+    margin-block: 5px;
+}
+
+.logo--pardubice {
+    flex: 0 1 auto;
+    max-height: 40px;
+}
+
+.panorama {
+    position: relative;
+    text-align: center;
+}
+
+.panorama__image {
+    border-radius: unset;
+    display: block;
+}
+
+.panorama__heading {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    padding-block: 10px;
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    padding-block: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #fff;
+    padding: 10px;
+    z-index: 1000;
+}
+
+
+.menu li {
+    display: inline-block;
+    line-height: 1.6;
+    line-break: strict;
+}
+
+.menu-link {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    padding: 10px 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+.menu-link:hover {
+    background: var(--bg-body);
+    color: var(--text-color);
+}
+
+.navigation {
+    position: relative;
+    z-index: 1000;
+    height: 45px;
+}
+
+.burger-toggle {
+    display: none;
+}
+
+.burger-button {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+}
+
+.burger-button span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.burger-toggle:checked~.menu {
+    display: flex;
+}
+
+.burger-toggle:checked+.burger-button span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px) translateX(4.75px);
+}
+
+.burger-toggle:checked+.burger-button span:nth-child(2) {
+    background-color: transparent;
+}
+
+.burger-toggle:checked+.burger-button span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px) translateX(4.75px);
+}
+
+@media (min-width: 680px) {
+    .logo--ballero {
+        max-height: 36px;
+
+    }
+
+    .logo--prima {
+        max-height: 120px;
+    }
+
+    .logo--pardubice {
+        max-height: 60px;
+    }
+
+    .panorama__heading {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 950px) {
+    .logo--ballero {
+        max-height: 60px;
+    }
+
+    .logo--prima {
+        max-height: 160px;
+    }
+
+    .logo--pardubice {
+        max-height: 100px;
+    }
+
+    .panorama__heading {
+        font-size: 4rem;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .navigation {
+        height: unset;
+        padding: 0;
+    }
+
+    .burger-button {
+        display: none;
+        /* Hide burger button for larger screens */
+    }
+
+    .menu-link {
+        font-size: 1.1rem;
+        color: white;
+        border-radius: var(--border-shape);
+        padding-block: 20px;
+    }
+
+    .menu-link:hover {
+        background: rgba(255, 255, 255, 0.3);
+        color: var(--text-color);
     }
 }

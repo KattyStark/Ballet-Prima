@@ -1,16 +1,19 @@
-.catalogue{
-    display: none;
-}
-
-@media(min-width: 950px) {
-/* Page Content */
 .catalogue {
-    display: block;
     padding: 10px;
     transition: filter 0.3s ease-in-out;
 }
 
-/* Modal (Hidden by Default) */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    display: none;
+}
+
 .modal {
     position: fixed;
     z-index: 1000;
@@ -18,19 +21,24 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
     display: none;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
 }
 
-/* Show Modal when Targeted */
 .modal:target {
     display: flex;
 }
 
-/* Modal Content */
+.modal:target~.modal-overlay {
+    display: block;
+}
+
+.modal:target~body {
+    overflow: hidden;
+}
+
 .modal__content {
     background: white;
     padding: 25px 5px 10px;
@@ -39,50 +47,48 @@
     width: 80%;
     max-width: 1000px;
     position: relative;
-    /* z-index: 2600; */
 }
-/* Close Button */
+
 .obleceni .modal__close-btn {
     position: absolute;
     top: -8px;
     right: 3px;
     font-size: 20px;
     text-decoration: none;
-    font-weight:900;
-    
+    font-weight: 900;
 }
 
-/* PDF iframe */
-.modal__content iframe {
+.modal__content object {
     width: 100%;
-    height: 500px;
+    height: 700px;
     border: none;
     min-width: 100%;
-    transform: scale(1); /* Force reflow */
-    transition: transform 0.1s ease-in-out; /* Smooth rendering */
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
 }
 
-/* Blur Background When Modal is Open */
 .modal:target~.modal__content {
     filter: blur(5px);
 }
 
-.modal:target .modal__content iframe {
+.modal:target .modal__content object {
     width: 100%;
     height: 500px;
     border: none;
     min-width: 100%;
-    transform: scale(1); /* Ensure proper rendering */
+    transform: scale(1);
+    will-change: transform;
 }
-}
-/* Safari-specific styles */
-/* @supports (-webkit-backdrop-filter: blur(10px)) {
-    .modal__content iframe {
-        width: 100%;
-        height: 500px;
-        border: none;
-        min-width: 100%;
-        transform: scale(1); 
-    }
-} */
 
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  .button:hover {
+    background-color: #0056b3;
+  }
+  

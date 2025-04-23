@@ -1,0 +1,131 @@
+html {
+	box-sizing: border-box;
+   }
+   
+   :root {
+	--bg-body: #b9d6f9ac;
+	--bg-gradient: linear-gradient(to right, #a0c4ff, #eef5ff);
+	--border-shape: 5px;
+	--border-shape-section: 15px;
+	--margin-centered: 20px auto;
+	--text-color: #1c3d5a;
+	--text-color-light: rgb(195, 203, 218);
+	--text-heading: #302e2f;
+	--spacing: 10px;
+	--shadow-1: 5px 5px 15px rgba(0, 0, 0, 0.2);
+	--shadow-2: 0 4px 8px rgba(0, 0, 0, 0.1);
+	--shadow-main: 0 10px 20px rgba(0, 0, 0, 0.1);
+   }
+   
+   *,
+   ::before,
+   ::after {
+	box-sizing: inherit;
+   }
+
+   body {
+	font-family: 'Playfair Display', serif;
+	background-color: var(--bg-body);
+	color: var(--text-color);
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+   }
+   
+   h1 {
+	font-size: 24px;
+	color: white;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin: 0;
+   }
+   
+   h2,
+   h3,
+   .event__caption {
+	/* margin-top: 10px; */
+	font-size: 18px;
+	color: #333;
+   }
+   
+   .contacts h2,
+   .onas h2,
+   .important h2,
+   .sal h2 {
+	color: var(--text-heading);
+	font-size: 24px;
+	/* margin-bottom: 15px; */
+   }
+   
+   .onas h3 {
+	color: #6c757d;
+	font-size: 22px;
+	/* margin-top: 10px; */
+   }
+   
+   .important h4 {
+	/* margin-top: 20px; */
+	font-size: 18px;
+	color: #272829;
+   }
+   
+   img {
+	width: 100%;
+	border-radius: var(--border-shape);
+   }
+   
+   .sal img,
+   .schedule__img,
+   .about__image,
+   .event__img {
+	box-shadow: var(--shadow-1);
+   }
+   
+   .dulezite__img img,
+   .diploma,
+   .card-container__photo,
+   .schedule__img {
+	display: block;
+   }
+   
+   
+   /* main container */
+   main {
+	padding: 20px;
+	margin: var(--margin-centered);
+	max-width: 1200px;
+	text-align: center;
+   }
+   
+   .home,
+   .obleceni,
+   .sal,
+   .important,
+   .contacts,
+   .onas {
+	border-radius: var(--border-shape-section);
+	box-shadow: var(--shadow-main);
+	background: var(--bg-gradient);
+   }
+   
+   @media (min-width: 680px) {
+   
+	.important,
+	.sal,
+	.contacts {
+	 text-align: left;
+	 padding: 60px;
+	}
+   
+	.important img,
+	.sal img,
+	.events img,
+	.about__image {
+	 max-width: 500px;
+	}
+   
+	.important h2,
+	.sal h2 {
+	 font-size: 28px;
+	}
+   }

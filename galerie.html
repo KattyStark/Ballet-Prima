@@ -1,6 +1,8 @@
 ---
 layout: layouts/stranka.njk
 title: Galerie
+mainClass: main--galerie
+style: /css/galerie.css
 ---
 
 <h2>Galerie Ballet Prima Pardubice</h2>
@@ -8,9 +10,9 @@ title: Galerie
     {% for prispevek in collections.balet_years | reverse %}
     <div class="gallery-item">
         {% if prispevek.data.images and prispevek.data.images.length > 0 %}
-        <img src="{{ prispevek.data.images[0].src }}" alt="{{ prispevek.data.images[0].alt }}">
+        <img class="image gallery-item__image" src="{{ prispevek.data.images[0].src }}" alt="{{ prispevek.data.images[0].alt }}">
         {% else %}
-        <img src="/images/default-placeholder.jpg" alt="No image available">
+        <img class="image gallery-item__image" src="/images/default-placeholder.jpg" alt="No image available">
         {% endif %}
         <div class="caption">
             <a href="{{ prispevek.url }}">{{prispevek.data.title}}</a>
