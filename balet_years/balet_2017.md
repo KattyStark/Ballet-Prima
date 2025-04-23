@@ -1,6 +1,7 @@
 ---
 layout: layouts/balet.njk
 title: Večer klasického baletu 2017
+mainClass: main--balet
 pagetitle: Večer klasického baletu 18. května 2017
 description: Večer klasického baletu se sólisty Baletu Národního divadla Praha Ivanna Illyenko, Michal Štípa.
 images:

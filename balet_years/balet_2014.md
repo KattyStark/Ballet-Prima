@@ -1,6 +1,7 @@
 ---
 layout: layouts/balet.njk
 title: Večer klasického baletu 2014
+mainClass: main--balet
 pagetitle: Večer klasického baletu 27. března 2014
 description: Foto Vlastimil Raška Pásmo ze světových baletů zatančili Tatiana
     Kuranosova

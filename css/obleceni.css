@@ -1,9 +1,13 @@
-
-.obleceni {
+.main--obleceni {
     text-align: center;
    }
    
-   .obleceni a {
+   .main--obleceni__download {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
     display: inline-block;
     margin: 5px auto;
    }
@@ -12,8 +16,6 @@
     width: 40%;
    }
    
-   .end {
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-   }
+  .main--obleceni__download:hover {
+    background-color: #0056b3;
+  }

@@ -1,6 +1,7 @@
 ---
 layout: layouts/balet.njk
 title: Večer klasického baletu 2012
+mainClass: main--balet
 pagetitle: Večer klasického baletu 19. února 2012
 # date: 2024-10-28T16:15
 description:

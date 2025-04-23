@@ -1,17 +1,18 @@
-.studio {
+.studio__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
    }
+   
+@media (min-width: 1200px) {
+ .studio__wrapper {
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+ }
 
-   @media (min-width: 1200px) {
-    .studio {
-     flex-direction: row;
-     justify-content: space-around;
-     gap: 20px;
-    }
-    .studio img {
-     flex: 1 1 auto;
-    }
-   }
+ .studio__image {
+  flex: 1 1 auto;
+ }
+}

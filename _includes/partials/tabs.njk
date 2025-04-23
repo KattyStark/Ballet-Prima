@@ -1,20 +1,22 @@
 {% block head %}
     <link rel="stylesheet" href="/css/tabs.css">
 {% endblock %}
+
+{% set tabs = [
+    { id: "tab1", label: "Rozvrh hodin", content: "partials/tabs-sections/rozvrh.njk" },
+    { id: "tab2", label: "Před začatkem", content: "partials/tabs-sections/details.njk" },
+    { id: "tab3", label: "Ceník", content: "partials/tabs-sections/cennik.njk" }
+] %}
+
 <div class="tabs">
-    <input class="tabs__input" type="radio" id="tab1" name="tab-group" checked="checked">
-        <label class="tabs__label" for="tab1">Rozvrh hodin</label>
-        <input class="tabs__input" type="radio" id="tab2" name="tab-group">
-            <label class="tabs__label" for="tab2">Před začatkem</label>
-            <input class="tabs__input" type="radio" id="tab3" name="tab-group">
-                <label class="tabs__label" for="tab3">Ceník</label>
-                <div class="tab-content" id="content1">
-                    {% include "partials/tabs-sections/rozvrh.njk" %}
-                </div>
-                <div class="tab-content" id="content2">
-                    {% include "partials/tabs-sections/details.njk" %}
-                </div>
-                <div class="tab-content" id="content3">
-                    {% include "partials/tabs-sections/cennik.njk" %}
-                </div>
-            </div>
+    {% for tab in tabs %}
+        <input class="tabs__input" type="radio" id="{{ tab.id }}" name="tab-group" {% if loop.first %}checked="checked"{% endif %}>
+        <label class="tabs__label" for="{{ tab.id }}">{{ tab.label }}</label>
+    {% endfor %}
+
+    {% for tab in tabs %}
+        <div class="tab__content" id="content{{ loop.index }}">
+            {% include tab.content %}
+        </div>
+    {% endfor %}
+</div>

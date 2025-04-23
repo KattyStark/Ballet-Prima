@@ -9,66 +9,41 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>4-6 let</td>
-                <td>1 / 1x týdně
-                </td>
-                <td>2650,- Kč</td>
-            </tr>
-            <tr>
-                <td>7-10 let (Valčík s košíky)</td>
-                <td>45 min / 2x týdně
-                </td>
-                <td>3900,- Kč</td>
-            </tr>
-            <tr>
-                <td>8-12 let (Valčík červené žluté)</td>
-                <td>60 min / 2x týdně
-                </td>
-                <td>4100,- Kč</td>
-            </tr>
-            <tr>
-                <td>12-14 let (Květinový valčík)</td>
-                <td>60 min / 2x týdně</td>
-                <td>4300,- Kč</td>
-            </tr>
-            <tr>
-                <td>15-18 let (Španělky)</td>
-                <td>60 min / 2x týdně</td>
-                <td>4600,- Kč</td>
-            </tr>
-            <tr>
-                <td>18+ (dospělí)</td>
-                <td>1 / 2x týdně</td>
-                <td>
-                    <div>- jednorázová lekce 180,- Kč</div>
-                    <div>- předplatné na 10 lekcí 1600,- Kč</div>
-                </td>
-            </tr>
+            {% set pricing = [
+                { age: "4-6 let", hours: "1 / 1x týdně", price: "2650,- Kč" },
+                { age: "7-10 let (Valčík s košíky)", hours: "45 min / 2x týdně", price: "3900,- Kč" },
+                { age: "8-12 let (Valčík červené žluté)", hours: "60 min / 2x týdně", price: "4100,- Kč" },
+                { age: "12-14 let (Květinový valčík)", hours: "60 min / 2x týdně", price: "4300,- Kč" },
+                { age: "15-18 let (Španělky)", hours: "60 min / 2x týdně", price: "4600,- Kč" },
+                { age: "18+ (dospělí)", hours: "1 / 2x týdně", price: [
+                    "- jednorázová lekce 180,- Kč",
+                    "- předplatné na 10 lekcí 1600,- Kč"
+                ]}
+            ] %}
+
+            {% for row in pricing %}
+                <tr>
+                    <td>{{ row.age }}</td>
+                    <td>{{ row.hours }}</td>
+                    <td>
+                        {% if row.price is string %}
+                            {{ row.price }}
+                        {% else %}
+                            {% for item in row.price %}
+                                <div>{{ item }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
         </tbody>
     </table>
-    <h4>
-        Půjčení kostýmů na vystoupení a soutěže
-    </h4>
-    <p>
-        350-550,- Kč
-    </p>
-    <h4>
-        Individuální hodina
-    </h4>
-    <p>
-        - jednorázová lekce základní 45 min. 500,- Kč
-    </p>
-    <p>
-        - jednorázová lekce konzervatoř 45 min. 600,- Kč
-    </p>
-    <p>
-        Vyučovací hodina trvá 45 minut.
-    </p>
-    <p>
-        Uvedené ceny jsou orientační a platí vždy pouze pro aktuální pololetí.
-    </p>
-    <p class="end">
-        Děkujeme za pochopení a těšíme se na společné taneční chvíle! ✨
-    </p>
+    <h4>Půjčení kostýmů na vystoupení a soutěže</h4>
+    <p>350-550,- Kč</p>
+    <h4>Individuální hodina</h4>
+    <p>- jednorázová lekce základní 45 min. 500,- Kč</p>
+    <p>- jednorázová lekce konzervatoř 45 min. 600,- Kč</p>
+    <p>Vyučovací hodina trvá 45 minut.</p>
+    <p>Uvedené ceny jsou orientační a platí vždy pouze pro aktuální pololetí.</p>
+    <p class="end">Děkujeme za pochopení a těšíme se na společné taneční chvíle! ✨</p>
 </section>

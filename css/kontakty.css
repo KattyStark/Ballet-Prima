@@ -1,33 +1,33 @@
-
-.contacts p {
+/*========Contacts=========*/
+.main--contacts p {
     font-weight: bold;
     color: var(--text-heading);
     font-size: 18px;
     margin-bottom: 15px;
    }
    
-   .contacts ul {
+   .main--contacts ul {
     list-style: none;
     padding: 0;
    }
    
-   .contacts li {
+   .main--contacts li {
     margin: 15px 0;
     font-size: 18px;
    }
    
-   .contacts a {
+   .main--contacts a {
     text-decoration: none;
     color: var(--text-heading);
     transition: color 0.3s ease-in-out;
    }
    
-   .contacts a:hover {
+   .main--contacts a:hover {
     color: #366de4;
     text-decoration: underline;
    }
-
-.map-container iframe {
+   
+   .map-container iframe {
     width: 100%;
     min-height: 350px;
     max-height: 550px;

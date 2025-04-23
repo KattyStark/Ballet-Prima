@@ -1,12 +1,12 @@
 <nav class="navigation">
     <input type="checkbox" id="burger-toggle" class="burger-toggle">
-        <label for="burger-toggle" class="burger-button">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <ul class="menu">
-            {% set menuItems = [
+    <label for="burger-toggle" class="burger-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <ul class="menu">
+        {% set menuItems = [
             { url: "/", label: "Hlavní stránka" }, 
             { url: "/baletni_studio/", label: "Baletní sál" }, 
             { url: "/onas/", label: "O nás" },
@@ -15,10 +15,10 @@
             { url: "/baletni_obleceni/", label: "Baletní oblečení" },
             { url: "/kontakty/", label: "Kontakty" }
         ] %}
-            {% for item in menuItems %}
-                <li class="menu__item">
-                    <a href="{{ item.url }}" class="menu-link">{{ item.label }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </nav>
+        {% for item in menuItems %}
+            <li class="menu__item">
+                <a href="{{ item.url }}" class="menu-link">{{ item.label }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

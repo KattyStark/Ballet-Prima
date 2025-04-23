@@ -1,6 +1,7 @@
 ---
 layout: layouts/balet.njk
 title: Večer klasického baletu 2022
+mainClass: main--balet
 pagetitle: Večer klasického baletu 2022
 description: Večer klasického baletu se sólisty Baletu Národního divadla Praha Alina Nanu, Federico Ievoli, Danilo Lo Monaco.
 images:

@@ -1,17 +1,13 @@
 ---
 layout: layouts/hlavni-sablona.njk
 ---
-
 {% block head %}
     <link rel="stylesheet" href="{{ style }}">
     {% endblock %}
 {% include 'partials/header.njk' %}
-
 <main
     {% if mainClass %} class="main main--pages {{ mainClass }}" {% endif %}>
-    {# {% if title == "Důležité informace a ceník" %}
-                {% include "partials/tabs.njk" %}
-            {% endif %} #}
+   
     {{ content | safe }}
 </main>
 {% include 'partials/footer.njk' %}

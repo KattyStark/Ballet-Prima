@@ -1,41 +1,39 @@
 {% block head %}
     <link rel="stylesheet" href="/css/carousel.css">
 {% endblock %}
-<div class="carousel">
-    {% for image in images %}
-        <input type="radio" name="carousel" id="slide{{ loop.index }}" {% if loop.first %} checked {% endif %}>
-    {% endfor %}
-    <div class="slides">
+    <div class="carousel">
         {% for image in images %}
-            <div class="slide">
-                <img src="{{ image.src }}" alt="{{ image.alt }}">
+            <input type="radio" name="carousel" id="slide{{ loop.index }}" {% if loop.first %} checked {% endif %}>
+            {% endfor %}
+            <div class="slides">
+                {% for image in images %}
+                    <div class="slide">
+                        <img class="image slide__img" src="{{ image.src }}" alt="{{ image.alt }}"></div>
+                    {% endfor %}
+                </div>
+                <div class="pagination">
+                    {% for i in range(1, images | length + 1) %}
+                        <label class="dot" for="slide{{ i }}"></label>
+                    {% endfor %}
+                </div>
+                <div class="arrows">
+                    {% for i in range(1, images | length + 1) %}
+                        <div class="arrow-set arrow-set-{{ i }}">
+                            {% if i == 1 %}
+                                <label class="prev" for="slide{{ images | length }}">←</label>
+                            {% else %}
+                                <label class="prev" for="slide{{ i - 1 }}">←</label>
+                            {% endif %}
+                            {% if i == images | length %}
+                                <label class="next" for="slide1">→</label>
+                            {% else %}
+                                <label class="next" for="slide{{ i + 1 }}">→</label>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
-        {% endfor %}
-    </div>
-    <div class="pagination">
-        {% for i in range(1, images | length + 1) %}
-            <label class="dot" for="slide{{ i }}"></label>
-        {% endfor %}
-    </div>
-    <div class="arrows">
-        {% for i in range(1, images | length + 1) %}
-            <div class="arrow-set arrow-set-{{ i }}">
-                {% if i == 1 %}
-                    <label class="prev" for="slide{{ images | length }}">←</label>
-                {% else %}
-                    <label class="prev" for="slide{{ i - 1 }}">←</label>
-                {% endif %}
-                {% if i == images | length %}
-                    <label class="next" for="slide1">→</label>
-                {% else %}
-                    <label class="next" for="slide{{ i + 1 }}">→</label>
-                {% endif %}
-            </div>
-        {% endfor %}
-    </div>
-</div>
-
-<style>
+ <style>
     {% for i in range(1, images | length + 1) %}
         #slide{{ i }}:checked ~ .arrows .arrow-set-{{ i }}{
             display: flex; 

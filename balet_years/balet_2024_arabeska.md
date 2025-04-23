@@ -1,6 +1,7 @@
 ---
 layout: layouts/balet.njk
 title: Pardubická Arabeska 2024
+mainClass: main--balet
 pagetitle: Pardubická Arabeska 2024
 description: Celostátní soutěž v klasickém tance Pardubická Arabeska
 images:

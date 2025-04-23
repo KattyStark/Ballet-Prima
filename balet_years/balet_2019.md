@@ -1,6 +1,7 @@
 ---
 layout: layouts/balet.njk
 title: Večer klasického baletu 2019
+mainClass: main--balet
 pagetitle: Večer klasického baletu 2019
 description: Večer klasického baletu se sólisty Baletu Národního divadla Praha Nikola Márová, Michal Štípa.
 images:

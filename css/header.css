@@ -222,6 +222,7 @@ header {
     color: var(--text-color-light);
 }
 
+/* Logo container */
 .logo-container {
     width: 100%;
     display: flex;
@@ -277,12 +278,8 @@ header {
 
 .menu {
     list-style: none;
-    padding-block: 20px;
+    padding: 20px 10px;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,11 +290,9 @@ header {
     top: 50px;
     right: 10px;
     background-color: white;
-    border: 1px solid #fff;
-    padding: 10px;
+    border: 1px solid #ccc;
     z-index: 1000;
 }
-
 
 .menu li {
     display: inline-block;
@@ -328,6 +323,7 @@ header {
 
 .burger-toggle {
     display: none;
+    /* Hide the checkbox input */
 }
 
 .burger-button {
@@ -370,7 +366,6 @@ header {
 @media (min-width: 680px) {
     .logo--ballero {
         max-height: 36px;
-
     }
 
     .logo--prima {

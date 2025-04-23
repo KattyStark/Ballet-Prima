@@ -1,6 +1,7 @@
 ---
 layout: layouts/balet.njk
 title: Večer klasického baletu 2024
+mainClass: main--balet
 pagetitle: Večer klasického baletu 2024
 description: Večer klasického baletu se sólisty Baletu Národního divadla Praha Rin Tokuyama, Dmytro Tenytskyy a Taneční Konzervatoř Hlavního místa Prahy.
 images:

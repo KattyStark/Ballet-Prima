@@ -1,20 +1,24 @@
 .catalogue {
     padding: 10px;
     transition: filter 0.3s ease-in-out;
-}
-
-.modal-overlay {
+   }
+   
+   .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
+    /* Same as modal background */
     z-index: 999;
+    /* Below the modal but above the rest of the content */
     display: none;
-}
-
-.modal {
+    /* Hidden by default */
+   }
+   
+   /* Modal (Hidden by Default) */
+   .modal {
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -25,21 +29,24 @@
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
-}
-
-.modal:target {
+   }
+   
+   /* Show Modal when Targeted */
+   .modal:target {
     display: flex;
-}
-
-.modal:target~.modal-overlay {
+   }
+   
+   .modal:target~.modal-overlay {
     display: block;
-}
-
-.modal:target~body {
+   }
+   
+   /* Prevent scrolling */
+   .modal:target~body {
     overflow: hidden;
-}
-
-.modal__content {
+   }
+   
+   /* Modal Content */
+   .modal__content {
     background: white;
     padding: 25px 5px 10px;
     border-radius: 10px;
@@ -47,48 +54,50 @@
     width: 80%;
     max-width: 1000px;
     position: relative;
-}
-
-.obleceni .modal__close-btn {
+   }
+   
+   /* Close Button */
+   .modal__close-btn {
     position: absolute;
-    top: -8px;
+    top: -3px;
     right: 3px;
     font-size: 20px;
     text-decoration: none;
     font-weight: 900;
-}
-
-.modal__content object {
+   }
+   
+   /* PDF object */
+   .modal__pdf {
     width: 100%;
     height: 700px;
     border: none;
     min-width: 100%;
     transform: scale(1);
     transition: transform 0.1s ease-in-out;
-}
-
-.modal:target~.modal__content {
+   }
+   
+   /* Blur Background When Modal is Open */
+   .modal:target~.modal__content {
     filter: blur(5px);
-}
-
-.modal:target .modal__content object {
+   }
+   
+   .modal:target .modal__pdf {
     width: 100%;
     height: 500px;
     border: none;
     min-width: 100%;
     transform: scale(1);
     will-change: transform;
-}
+   }
 
-.button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-  }
-  .button:hover {
-    background-color: #0056b3;
-  }
-  
+   .open-modal {
+       padding: 10px 20px;
+       background-color: #007bff;
+       color: white;
+       text-decoration: none;
+       border-radius: 5px;
+       display: inline-block;
+     }
+     .open-modal:hover {
+       background-color: #0056b3;
+     }
