@@ -1,8 +1,8 @@
 html {
     box-sizing: border-box;
-   }
-   
-   :root {
+}
+
+:root {
     --bg-body: #b9d6f9ac;
     --bg-gradient: linear-gradient(to right, #a0c4ff, #eef5ff);
     --border-shape: 5px;
@@ -16,102 +16,102 @@ html {
     --shadow-2: 0 4px 8px rgba(0, 0, 0, 0.1);
     --shadow-main: 0 10px 20px rgba(0, 0, 0, 0.1);
     --test: red;
-   }
-   
-   *,
-   ::before,
-   ::after {
+}
+
+*,
+::before,
+::after {
     box-sizing: inherit;
-   }
-   
-   body {
+}
+
+body {
     font-family: 'Playfair Display', serif;
     background-color: var(--bg-body);
     color: var(--text-color);
     margin: 0;
     padding: 0;
     font-size: 16px;
-   }
-   
-   h1 {
+}
+
+h1 {
     font-size: 24px;
     color: white;
     font-weight: 700;
     letter-spacing: 2px;
     margin: 0;
-   }
-   
-   h2,
-   h3,
-   .event__caption {
+}
+
+h2,
+h3,
+.event__caption {
     font-size: 18px;
     color: #333;
-   }
-   /* TODO fonts for texts */
-   .main--contacts h2,
-   .main--onas h2,
-   .important h2,
-   .main--sal h2 {
+}
+
+.main--contacts h2,
+.main--onas h2,
+.important h2,
+.main--sal h2 {
     color: var(--text-heading);
     font-size: 24px;
-   }
-   
-   .onas__uvod {
+}
+
+.onas__uvod {
     color: #6c757d;
     font-size: 22px;
-   }
-   
-   .important h4 {
+}
+
+.important h4 {
     font-size: 18px;
     color: #272829;
-   }
-   
-   .image {
+}
+
+.image {
     width: 100%;
     border-radius: var(--border-shape);
-   }
-   
-   .image--shadow-2 {
+}
+
+.image--shadow-2 {
     box-shadow: var(--shadow-1);
-   }
-   
-   .image--block {
+}
+
+.image--block {
     display: block;
-   }
-   
-   /* main container */
-   .main {
+}
+
+/* main container */
+.main {
     padding: 20px;
     margin: var(--margin-centered);
     max-width: 1200px;
     text-align: center;
-   }
-   
-   .main--pages {
+}
+
+.main--pages {
     border-radius: var(--border-shape-section);
     box-shadow: var(--shadow-main);
     background: var(--bg-gradient);
-   }
-   
-   .end {
+}
+
+.end {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-   }
-   
-   @media (min-width: 680px) {
-   
+}
+
+@media (min-width: 680px) {
+
     .main--tablet {
-     text-align: left;
-     padding: 60px;
+        text-align: left;
+        padding: 60px;
     }
-   
+
     .image--tablet {
-     max-width: 500px;
+        max-width: 500px;
     }
-   
+
     .important h2,
     .main--sal h2 {
-     font-size: 28px;
+        font-size: 28px;
     }
-   }
+}

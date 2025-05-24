@@ -2,41 +2,41 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-   }
-   
-   .gallery-item {
+}
+
+.gallery-item {
     background: #fff;
     box-shadow: var(--shadow-2);
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-   }
-   
-   .gallery-item:hover {
+}
+
+.gallery-item:hover {
     transform: scale(1.05);
-   }
-   
-   .caption {
+}
+
+.caption {
     padding: 10px;
-   }
-   
-   .caption a {
+}
+
+.caption a {
     text-decoration: none;
     color: #3158bb;
     font-weight: bold;
     display: inline-block;
     transition: color 0.3s;
-   }
-   
-   .caption a:hover {
+}
+
+.caption a:hover {
     color: #6d81b4;
-   }
-   
-   .gallery-item img {
+}
+
+.gallery-item img {
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
-   }
-   
-   .gallery-item img:hover {
+}
+
+.gallery-item img:hover {
     transform: scale(1.05);
-   }
+}
