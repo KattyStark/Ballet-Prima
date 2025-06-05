@@ -1,0 +1,11 @@
+{% block head %}
+  <link
+    rel="stylesheet" href="/css/lightbox.css">
+  {% endblock %}
+  <div class="lightbox-gallery">
+    {% for image in images %}
+      <a data-fslightbox="lightbox-gallery"  href="{{ image.src }}">
+        <img class="image gallery-item__image" src="{{ image.src }}" alt="{{ image.alt }}"></a>
+      {% endfor %}
+    </div>
+    <script src="/fslightbox.js"></script>
